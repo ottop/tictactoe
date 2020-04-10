@@ -31,7 +31,7 @@ def squares(): #The function that goes through the gameplay itself
             exit()
         try: #If answer to squareno is an integer
             squareno=int(input(str(players[turn%2])+", enter the number of the square you wish to take: "))
-            if square[squareno-1]==" ":
+            if square[squareno-1]==" " and squareno>0:
                 square[squareno-1]=players[turn%2]
             else:
                 print("Please pick a square between 1 and 9 that is not occupied")
